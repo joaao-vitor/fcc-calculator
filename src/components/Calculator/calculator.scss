@@ -1,0 +1,35 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244 244 245);
+    height: 500px;
+    width: 400px;
+    max-width: 100vw;
+    max-height: 100vh;
+    
+    .actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        padding: 1rem;
+        height: 100%;
+        gap: 0.25rem;
+    }
+}
+.display {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgb(212 212 216);
+    align-items: flex-end;
+
+    .small-display{
+        font-size: 0.75rem;
+    }
+    .large-display{
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+}
